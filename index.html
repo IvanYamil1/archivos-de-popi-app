@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archivos de Popi - temas</title>
+<meta name="description" content="Herramienta interna del canal Archivos de Popi que lee las estadísticas del propio canal para elegir los temas de sus videos.">
+<style>
+  :root { --fondo: #ffffff; --texto: #1d1d1f; --suave: #5b5b63; --enlace: #0b57d0; --linea: #e3e3e8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo: #141416; --texto: #f2f2f5; --suave: #a8a8b3; --enlace: #8ab4f8; --linea: #2c2c33; }
+  }
+  body { margin: 0; background: var(--fondo); color: var(--texto); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.8rem; line-height: 1.25; margin: 0 0 8px; }
+  .sub { color: var(--suave); margin: 0 0 32px; }
+  h2 { font-size: 1.15rem; margin: 32px 0 8px; }
+  a { color: var(--enlace); }
+  ul { padding-left: 1.2rem; }
+  footer { border-top: 1px solid var(--linea); margin-top: 40px; padding-top: 16px; color: var(--suave); font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Archivos de Popi - temas</h1>
+  <p class="sub">Herramienta interna del canal de YouTube <a href="https://www.youtube.com/@ArchivosDePopi">Archivos de Popi</a>.</p>
+
+  <h2>Qué es</h2>
+  <p>Es un programa que usa solo el equipo del canal, en su propio ordenador. Ayuda a elegir los temas de los próximos videos. Para eso
+    lee las estadísticas del propio canal: qué videos se han visto más, cuántas horas y con qué alcance. No es una aplicación pública
+    y no la puede usar nadie más.</p>
+
+  <h2>Qué lee de Google</h2>
+  <ul>
+    <li><strong>YouTube Data API</strong>, solo lectura (<code>youtube.readonly</code>): la lista de videos del canal, sus títulos,
+      duración, fecha de publicación y si son públicos.</li>
+    <li><strong>YouTube Analytics API y YouTube Reporting API</strong>, solo lectura (<code>yt-analytics.readonly</code>): las vistas y
+      las horas vistas de esos videos, y los informes de alcance del canal.</li>
+  </ul>
+  <p>No publica, no cambia ni borra nada en YouTube. Solo funciona con la cuenta del canal Archivos de Popi.</p>
+
+  <h2>Privacidad</h2>
+  <p>Cómo se tratan esos datos está en la <a href="privacidad.html">política de privacidad</a>.</p>
+
+  <footer>Archivos de Popi · <a href="privacidad.html">Política de privacidad</a></footer>
+</main>
+</body>
+</html>
